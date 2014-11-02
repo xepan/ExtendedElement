@@ -11,7 +11,7 @@ class page_ExtendedElement_page_owner_update extends page_componentBase_page_upd
 		// Code To run before update
 		
 		$this->update($dynamic_model_update=true); // All modls will be dynamic executed in here
-		
+		$this->add('View_Info')->set('Component Updated');
 		// Code to run after update
 	}
 }
