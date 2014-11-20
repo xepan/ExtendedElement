@@ -23,6 +23,8 @@ $('#popup_edit_mode').click(function(event) {
 	$(current_selected_component).find( "div.xpopup" ).removeClass('modal fade').css('display','block');
 	$(current_selected_component).find( "button.xpopup-btn" ).css('display','inline');
 
+	$('#epan-quick-component-options').hide('slideup');
+
 });
 
 $('#popup_view_mode').click(function(event) {
