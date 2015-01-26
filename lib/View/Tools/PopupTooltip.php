@@ -7,7 +7,8 @@ class View_Tools_PopupTooltip extends \componentBase\View_Component{
 	function init(){
 		parent::init();
 
-	
+		if(!$this->api->edit_mode)
+			$this->js('true')->_selector('[role=dialog'])->appendTo('body');
 	}
 
 	// defined in parent class
